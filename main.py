@@ -45,7 +45,7 @@ def post_comanda():
         json.dump(jsonfile,f,indent=4)
     return "<h1>Produsul a fost adaugat in cos !<h1>"
 
-@app.route('/comanda/<id>',methods=['PUT'])
+@app.route('/comanda/<id>',methods=['PATCH'])
 def put_comanda(id):
     body = request.json
     list=data['comanda']
